@@ -605,8 +605,11 @@ while True:
                 else:
                     print("cannot used 3 same moves in row")
                     
+                if hero.move_test == "exit":
+                    raise GameExit("exiting game")
                 if hero.move_test == "suicide":
-                    raise GameExit("you have commited suicide")
+                    hero.move = "r"
+                    hero.hp = -90
                 
             if hero.movehistory == "":
                 hero.movehistory = hero.move
