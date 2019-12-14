@@ -421,7 +421,7 @@ while True:
             print("         | health   | ",hero.health," |     | health    | ",enemy.stamina," |") #visual combat
             print("         +----------+-----+     +-----------+-----+")
             print("         lvl",hero.lvl,"                 lvl",enemy.lvl,"")
-            print("        ",hero.special,("#####" if hero.charge == True else ("/////" if hero.dodge==True else "     ")),"           ",(enemy.special if enemy.special != False else ""),("#####" if enemy.charge == True else "     "))
+            print("        ",hero.special,("#####" if hero.charge == True else ("/////" if hero.dodge==True else "     ")),"          ",(enemy.special if enemy.special != False else ""),("#####" if enemy.charge == True else "     "))
             if developer == True:
                 print(">>> enemy:",enemy.move)
                 print(">>> hero:",hero.move)
